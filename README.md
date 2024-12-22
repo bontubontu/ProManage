@@ -3,6 +3,32 @@
 ProManageは、プロジェクトの進捗管理を効率化し、作業の達成感を提供するタスク管理アプリです。
 
 ---
+### 開発環境
+
+- **バックエンド**: Laravel 11
+- **フロントエンド**: TailwindCSS, Bootstrap
+  - デザイン: TailwindCSS
+  - UIコンポーネント: Bootstrap
+- **データベース**: MySQL 8.0
+- **ビルドツール**: Vite
+- **認証**: Laravel Breeze
+- **環境構築**: Laravel Sail
+  - Dockerを使用し、以下のサービスを統合：
+    - **MySQL**: バージョン 8.0
+    - **Redis**: 最新（alpine）
+    - **Meilisearch**: 最新
+    - **Mailpit**: 最新
+    - **phpMyAdmin**: バージョン不明
+    - **Selenium**: Chromium対応
+- **OS**: Windows 11 + WSL2 (Ubuntu)
+- **ツール**: Docker Desktop, Visual Studio Code
+- **PHP**: 8.4
+- **Node.js**: 18.x
+- **テストフレームワーク**:
+  - **Pest**: シンプルで読みやすい構文を提供するテストフレームワーク
+  - Laravel Breezeの初期設定で採用
+  - `./vendor/bin/sail test` コマンドでテスト実行可能
+---
 
 ## 機能要件
 
